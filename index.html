@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<!-- <html lang="en" data-theme="dark"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bulma.min.css">
+    <link rel="stylesheet" href="style/bulmaswatch.min.css">
+    <script src="javascript/lucide.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/journal/bulmaswatch.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script> -->
+    <!-- <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script> -->
+    <title>JavaScript for Data Science</title>
+    <style>
+        .clickable-content {
+            cursor: pointer;
+        }
+        .adjust-centre {
+            text-align: center;
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+        #side-nav {
+            position: sticky;
+            display: inline-block;
+            vertical-align: top;
+            max-height: 100vh;
+            /* overflow-y: auto; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <section class="section columns is-fullheight">
+
+            <aside id="side-nav" class="menu column is-4 is-narrow-mobile is-fullheight">
+                <p class="menu-label">Table of content</p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#working-with-data">Working with data</a>
+                        <ul>
+                            <li><a href="#manipulating-data"><small>Manipulating data</small></a></li>
+                            <li><a href="#reading-json"><small>Reading and parsing JSON data</small></a></li>
+                            <li><a href="#loading-tabular-data"><small>Loading tabular data sources</small></a></li>
+                        </ul>
+                        <a href="#data-visualisation">Data visualisation</a>
+                        <ul>
+                            <li><a href="#popular-plotting-libraries"><small>Popular plotting libraries</small></a></li>
+                            <li><a href="#plotting-tabular-data"><small>Tabular data</small></a></li>
+                            <li><a href="#plotting-specific-use-cases"><small>Specific use cases</small></a></li>
+                        </ul>
+                        <a href="#business-intelligence">Business Intelligence and data exploration</a>
+                        <ul>
+                            <li><a href="#building-apps-dashboards"><small>Building data apps and dashboards</small></a></li>
+                            <li><a href="#exploring-tabular-data"><small>Exploring tabular data</small></a></li>
+                        </ul>
+                        <a href="#prototyping">Prototyping</a>
+                        <ul>
+                            <li><a href="#notebook-environments"><small>Notebook environments</small></a></li>
+                            <li><a href="#online-playgrounds"><small>Online playgrounds</small></a></li>
+                        </ul>
+                        <a href="#libraries">Libraries for data science</a>
+                        <ul>
+                            <li><a href="#statistics-probabilities"><small>Statistics and Probabilities</small></a></li>
+                            <li><a href="#natural-language-processing"><small>Natural language processing</small></a></li>
+                            <li><a href="#deep-learning"><small>Deep learning</small></a></li>
+                        </ul>
+                        <a href="#web-development">Basics of web development for data practitioners</a>
+                        <ul>
+                            <li><a href="#make-your-webpages-prettier"><small>Make your webpages prettier</small></a></li>
+                            <li><a href="#static-site-generators"><small>Static site generators</small></a></li>
+                            <li><a href="#hosting-solutions"><small>Hosting solutions</small></a></li>
+                            <li><a href="#creating-web-server"><small>Creating a web server</small></a></li>
+                            <li><a href="#web-application-frameworks"><small>Web application frameworks</small></a></li>
+                        </ul>
+                        <a href="#further-reading">Further reading</a>
+                        <ul>
+                            <li><a href=""><small>Coming soon</small></a></li>
+                        </ul>
+                        <a href="#tutorials">Tutorials</a>
+                        <ul>
+                            <li><a href=""><small>Coming soon</small></a></li>
+                        </ul>
+                        <a href="#credits">Credits</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="container column is-8">
+                <div class="content">
+                    <h1 class="title is-3 has-text-centered has-text-centered-mobile">JavaScript for Data Science and Data Analytics</h1>
+                    <div class="block has-text-centered has-text-centered-mobile">
+                        <img src="https://img.shields.io/badge/version-0.1-green" alt="">
+                        <img src="https://img.shields.io/badge/last_updated-2024.12.24-blue" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="block">
+                            <p>Welcome to <a class="has-text-danger" href="#"><strong>javascriptfordatascience.com</strong></a>.</p>
+                        </div>
+                        <div class="block">
+                            <p>The goal of this project is to provide a comprehensive list of libraries and tools that can help you boost your data science and data analytics projects.</p>
+                        </div>
+                        <div class="block">
+                            <p>Please reach out via <a class="has-text-danger" href=""><strong>GitHub</strong></a> if you'd like to contribute to this project or if you have a library that you think should be added to this list of resources.</p>
+                        </div>
+                        <div class="block">
+                            <p class="adjust-centre"><small><i>Disclaimer: JavaScript is a trademark of Oracle Corporation in the US. We are not endorsed by or affiliated with Oracle.</i></small></p>
+                        </div>                
+                    </div>
+                    <h1 id="working-with-data" class="title is-4 has-text-centered-mobile">
+                        <strong>Working with data</strong>
+                        &ensp;
+                        <i data-lucide="wrench"></i>
+                    </h1>
+                    <hr>
+                        <h4 id="manipulating-data" class="title is-6 has-text-centered-mobile">Manipulating data</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://github.com/uwdata/arquero">Arquero</a></li>
+                        <li><a class="has-text-danger" href="https://danfo.jsdata.org/">Danfo</a></li>
+                        <li><a class="has-text-danger" href="https://github.com/pola-rs/nodejs-polars">Polars</a></li>
+                        </ul>
+                        <h4 id="reading-json-data" class="title is-6 has-text-centered-mobile">Reading and parsing JSON data</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://d3js.org/">D3</a></li>
+                        <li><a class="has-text-danger" href="https://www.papaparse.com/">Papaparse</a></li>
+                        </ul>
+                        <h4 id="loading-tabular-data" class="title is-6 has-text-centered-mobile">Loading tabular data sources</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://sql.js.org/#/">SQLite</a></li>
+                        </ul>
+                    <br>
+                    <h1 id="data-visualisation" class="title is-4 has-text-centered-mobile">
+                        <strong>Data visualisation</strong>
+                        &ensp;
+                        <i data-lucide="chart-area"></i>
+                    </h1>
+                    <hr>
+                        <h4 id="popular-plotting-libraries" class="title is-6 has-text-centered-mobile">Popular plotting libraries</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://apexcharts.com/">ApexCharts</a></li>
+                        <li><a class="has-text-danger" href="https://echarts.apache.org/en/index.html">Apache eCharts</a></li>
+                        <li><a class="has-text-danger" href="https://observablehq.com/plot/">Observable Plots</a></li>
+                        <li><a class="has-text-danger" href="https://plotly.com/javascript/">Plotly</a></li>
+                        <li><a class="has-text-danger" href="https://vega.github.io/vega-lite/">VegaLite</a></li>
+                        </ul>
+                        <h4 id="plotting-tabular-data" class="title is-6 has-text-centered-mobile">Tabular data</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://tabulator.info/">Tabulator</a></li>
+                        <li><a class="has-text-danger" href="https://apexcharts.com/apexgrid/docs/installation-usage/">ApexGrid</a></li>
+                        <li><a class="has-text-danger" href="https://datatables.net/">DataTables</a></li>
+                        </ul>
+                        <h4 id="plotting-specific-use-cases" class="title is-6 has-text-centered-mobile">Specific use cases</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://apexcharts.com/apexsankey/docs/installation-usage/">ApexSankey</a></li>
+                        <li><a class="has-text-danger" href="https://apexcharts.com/apextree/docs/installation-usage/">ApexTree</a></li>
+                        <li><a class="has-text-danger" href="https://leafletjs.com/">Leaflet</a></li>
+                        <li><a class="has-text-danger" href="https://js.cytoscape.org/">Cytoscape</a></li>
+                        <li><a class="has-text-danger" href="https://www.sigmajs.org/">Sigma</a></li>
+                        </ul>
+                    <br>
+                    <h1 id="business-intelligence" class="title is-4 has-text-centered-mobile">
+                        <strong>Business intelligence and data exploration</strong>
+                        &ensp;
+                        <i data-lucide="search"></i>
+                    </h1>
+                    <hr>
+                        <h4 id="building-apps-dashboards" class="title is-6 has-text-centered-mobile">Building data apps and dashboards</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://observablehq.com/framework/">Observable Framework</a></li>
+                        <li><a class="has-text-danger" href="https://github.com/chartbrew/chartbrew">Chartbrew</a></li>
+                        </ul>
+                        <h4 id="exploring-tabular-data" class="title is-6 has-text-centered-mobile">Exploring tabular data</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://github.com/visprex/visprex">Visprex</a></li>
+                        <li><a class="has-text-danger" href="https://github.com/evidence-dev/evidence">Evidence</a></li>
+                        </ul>
+                    <br>
+                    <h1 id="prototyping" class="title is-4 has-text-centered-mobile">
+                        <strong>Prototyping</strong>
+                        &ensp;
+                        <i data-lucide="flask-conical"></i>
+                    </h1>
+                    <hr>
+                        <h4 id="notebook-environments" class="title is-6 has-text-centered-mobile">Notebook environments</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://starboard.gg/">Starboard</a></li>
+                        <li><a class="has-text-danger" href="https://www.typecell.org/">TypeCell</a></li>
+                        <li><a class="has-text-danger" href="https://observablehq.com/">Observable</a></li>
+                        <li><a class="has-text-danger" href="https://docs.deno.com/runtime/reference/cli/jupyter/">Jupyter Kernel for Deno</a></li>
+                        </ul>
+                        <h4 id="online-playgrounds" class="title is-6 has-text-centered-mobile">Online playgrounds</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://alpha.trycarbide.com/">Carbide</a></li>
+                        <li><a class="has-text-danger" href="https://runkit.com/home">Runkit</a></li>
+                        <li><a class="has-text-danger" href="https://github.com/srcbookdev/srcbook?tab=readme-ov-file">Srcbook</a></li>
+                        </ul>
+                    <br>
+                    <h1 id="libraries" class="title is-4 has-text-centered-mobile">
+                        <strong>Libraries for data science</strong>
+                        &ensp;
+                        <i data-lucide="lightbulb"></i>
+                    </h1>
+                    <hr>
+                        <h4 id="statistics-probabilities" class="title is-6 has-text-centered-mobile">Statistics and Probabilities</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://yomguithereal.github.io/talisman/">Talisman</a></li>
+                        </ul>
+                        <h4 id="natural-language-processing" class="title is-6 has-text-centered-mobile">Natural language processing</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://winkjs.org/">winkNLP</a></li>
+                        <li><a class="has-text-danger" href="https://compromise.cool/">Compromise</a></li>
+                        </ul>
+                        <h4 id="deep-learning" class="title is-6 has-text-centered-mobile">Deep learning</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://www.tensorflow.org/js">TensorFlow.js</a></li>
+                        <li><a class="has-text-danger" href="https://brain.js.org/#/">Brain.js</a></li>
+                        <li><a class="has-text-danger" href="https://huggingface.co/docs/transformers.js/en/index">Transformers.js</a></li>
+                        </ul>
+                    <br>
+                    <h1 id="web-development" class="title is-4 has-text-centered-mobile">
+                        <strong>Basics of web development for data practitioners</strong>
+                        &ensp;
+                        <i data-lucide="chevrons-left-right-ellipsis"></i>
+                    </h1>
+                    <hr>
+                        <h4 id="make-your-webpages-prettier" class="title is-6 has-text-centered-mobile">Make your webpages prettier</h4>
+                        <p>Main CSS frameworks</p>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://bulma.io/">Bulma</a></li>
+                        <li><a class="has-text-danger" href="https://getbootstrap.com/">Bootstrap</a>
+                        </ul>
+                        <p>Minimalist CSS frameworks</p>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://picocss.com/">Pico</a></li>
+                        <li><a class="has-text-danger" href="https://andybrewer.github.io/mvp/">MVP</a></li>
+                        <li><a class="has-text-danger" href="https://milligram.io/">Milligram</a></li>
+                        <li><a class="has-text-danger" href="https://latex.vercel.app/">Latex</a></li>
+                        </ul>
+                        <h4 id="static-site-generators" class="title is-6 has-text-centered-mobile">Static site generators</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://www.gatsbyjs.com/">Gatsby</a></li>
+                        <li><a class="has-text-danger" href="https://docusaurus.io/">Docusaurus</a></li>
+                        </ul>
+                        <p>Non JavaScript alternatives</p>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://hydephp.com/">HydePHP</a></li>
+                        <li><a class="has-text-danger" href="https://gohugo.io/">Hugo</a></li>
+                        <li><a class="has-text-danger" href="https://jekyllrb.com/">Jekyll</a></li>
+                        </ul>
+                        <h4 id="hosting-solutions" class="title is-6 has-text-centered-mobile">Hosting solutions</h4>
+                        <ul>
+                            <li><a class="has-text-danger" href="https://pages.github.com/">GitHub Pages</a></li>
+                        </ul>
+                        <h4 id="creating-web-server" class="title is-6 has-text-centered-mobile">Creating a web server</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://nodejs.org/en">Node.js</a></li>
+                        <li><a class="has-text-danger" href="https://bun.sh/">Bun.js</a></li>
+                        </ul>
+                        <h4 id="web-application-frameworks" class="title is-6 has-text-centered-mobile">Web application frameworks</h4>
+                        <ul>
+                        <li><a class="has-text-danger" href="https://react.dev/">React</a></li>
+                        <li><a class="has-text-danger" href="https://svelte.dev/">Svelte</a></li>
+                        <li><a class="has-text-danger" href="https://angular.dev/">Angular</a></li>
+                        </ul>
+                    <br>
+                    <h1 id="further-reading" class="title is-4 has-text-centered-mobile">
+                        <strong>Further reading</strong>
+                        &ensp;
+                        <i data-lucide="book-open"></i>
+                    </h1>
+                    <hr>
+                    <p>Coming soon</p>
+                    <br>
+                    <h1 id="tutorials" class="title is-4 has-text-centered-mobile">
+                        <strong>Tutorials</strong>
+                        &ensp;
+                        <i data-lucide="handshake"></i>
+                    </h1>
+                    <hr>
+                        <p>Coming soon</p>
+                    <br>
+                    <h1 id="credits" class="title is-4 has-text-centered-mobile">
+                        <strong>Credits</strong>
+                        &ensp;
+                        <i data-lucide="heart"></i>
+                    </h1>
+                    <hr>
+                    <p>This repository was made possible thanks to the following projects:</p>
+                    <ul>
+                        <li><a class="has-text-danger" href="https://nodejs.org/en">Bulma</a></li>
+                        <li><a class="has-text-danger" href="https://nodejs.org/en">Bulmaswatch</a></li>
+                        <li><a class="has-text-danger" href="https://nodejs.org/en">Lucide</a></li>
+                    </ul>
+
+                </div>
+                
+            </div>
+
+        </section>
+        <section class="section">
+            <div class="box">
+                <div class="content has-text-centered">
+                    <strong>2025&ensp;-&ensp;<a class="has-text-danger" href="#">javascriptfordatascience.com</a></strong>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
