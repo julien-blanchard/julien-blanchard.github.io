@@ -102,6 +102,8 @@ You're more than welcome to contribute to this project.
 
 #### Statistics and Probabilities
 * [Talisman](https://yomguithereal.github.io/talisman/)
+* [stdlib](https://github.com/stdlib-js/stdlib)
+* [ml5](https://github.com/ml5js/ml5-next-gen)
 
 #### Natural language processing
 * [winkNLP](https://winkjs.org/)
