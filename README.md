@@ -28,6 +28,7 @@ You're more than welcome to contribute to this project.
   * [Online playgrounds](#online-playgrounds)
 * [Libraries for data science](#libraries-for-data-science-bulb)
   * [Statistics and Probabilities](#statistics-and-probabilities)
+  * [Machine Learning](#machine-learning)
   * [Natural language processing](#natural-language-processing)
   * [Deep learning](#deep-learning) 
 * [Basics of web development for data practitioners](#basics-of-web-development-for-data-practitioners-computer)
@@ -103,6 +104,8 @@ You're more than welcome to contribute to this project.
 #### Statistics and Probabilities
 * [Talisman](https://yomguithereal.github.io/talisman/)
 * [stdlib](https://github.com/stdlib-js/stdlib/)
+
+#### Machine Learning
 * [ml5](https://github.com/ml5js/ml5-next-gen/)
 
 #### Natural language processing
