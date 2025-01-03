@@ -145,6 +145,7 @@ Non JavaScript alternatives
 #### Creating a web server
 * [Node.js](https://nodejs.org/en)
 * [Bun.js](https://bun.sh/)
+* [Deno](https://deno.com/)
 
 #### Web application frameworks
 * [React](https://react.dev/)
