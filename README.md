@@ -93,6 +93,7 @@ You're more than welcome to contribute to this project.
 * [TypeCell](https://www.typecell.org/)
 * [Observable](https://observablehq.com/)
 * [Jupyter Kernel for Deno](https://docs.deno.com/runtime/reference/cli/jupyter/)
+* [Scribbler](https://scribbler.live/)
 
 #### Online playgrounds
 * [Carbide](https://alpha.trycarbide.com/)
