@@ -155,11 +155,11 @@ Non JavaScript alternatives
 
 # Further reading :book:
 
-Coming soon
+* []()
 
 # **Resources** :pencil:
 
-Coming soon
+* [JavaScript for Data Science (free online version)](https://third-bit.com/js4ds/)
 
 # **Credits** :heart:
 
