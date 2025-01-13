@@ -155,11 +155,16 @@ Non JavaScript alternatives
 
 # Further reading :book:
 
-* []()
+### Books
+* [JavaScript for Data Science](https://www.routledge.com/JavaScript-for-Data-Science/Gans-Hodges-Wilson/p/book/9780367422486)
 
 # **Resources** :pencil:
 
+### Data science
 * [JavaScript for Data Science (free online version)](https://third-bit.com/js4ds/)
+
+### Web development
+* [30 days of React](https://github.com/Asabeneh/30-Days-Of-React)
 
 # **Credits** :heart:
 
