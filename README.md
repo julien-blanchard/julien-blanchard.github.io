@@ -107,6 +107,7 @@ You're more than welcome to contribute to this project.
 * [stdlib](https://github.com/stdlib-js/stdlib/)
 
 #### Machine Learning
+* [ml.js](https://github.com/mljs)
 * [ml5](https://github.com/ml5js/ml5-next-gen/)
 
 #### Natural language processing
