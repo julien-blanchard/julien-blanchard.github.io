@@ -63,6 +63,7 @@ You're more than welcome to contribute to this project.
 * [Observable Plots](https://observablehq.com/plot/)
 * [Plotly](https://plotly.com/javascript/)
 * [VegaLite](https://vega.github.io/vega-lite/)
+* [Google Charts](https://developers.google.com/chart)
 
 #### Tabular data
 * [Tabulator](https://tabulator.info/)
