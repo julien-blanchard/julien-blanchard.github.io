@@ -68,6 +68,7 @@ You're more than welcome to contribute to this project.
 #### Tabular data
 * [Tabulator](https://tabulator.info/)
 * [ApexGrid](https://apexcharts.com/apexgrid/docs/installation-usage/)
+* [Ag-Grid](https://github.com/ag-grid/ag-grid)
 * [DataTables](https://datatables.net/)
 
 #### Specific use cases
