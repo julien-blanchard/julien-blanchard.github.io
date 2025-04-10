@@ -115,6 +115,7 @@ You're more than welcome to contribute to this project.
 #### Natural language processing
 * [winkNLP](https://winkjs.org/)
 * [Compromise](https://compromise.cool/)
+* [Natural](https://github.com/NaturalNode/natural)
 
 #### Deep learning
 * [TensorFlow.js](https://www.tensorflow.org/js)
