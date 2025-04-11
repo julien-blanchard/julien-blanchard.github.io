@@ -125,10 +125,13 @@ You're more than welcome to contribute to this project.
 # **Basics of web development for data practitioners** :computer:
 
 #### Make your webpages prettier
+
 Main CSS frameworks
 * [Bulma](https://bulma.io/)
 * [Bootstrap](https://getbootstrap.com/)
+
 Minimalist CSS frameworks
+
 * [Pico](https://picocss.com/)
 * [MVP](https://andybrewer.github.io/mvp/)
 * [Milligram](https://milligram.io/)
