@@ -137,6 +137,7 @@ Minimalist CSS frameworks
 * [Metro UI](https://docs.metroui.org.ua/)
 * [Milligram](https://milligram.io/)
 * [Latex](https://latex.vercel.app/)
+* [WebTUI](https://github.com/webtui/webtui)
 
 #### Static site generators
 * [Gatsby](https://www.gatsbyjs.com/)
