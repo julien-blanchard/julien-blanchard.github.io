@@ -92,7 +92,6 @@ You're more than welcome to contribute to this project.
 
 #### Notebook environments
 * [Starboard](https://starboard.gg/)
-* [TypeCell](https://www.typecell.org/)
 * [Observable](https://observablehq.com/)
 * [Jupyter Kernel for Deno](https://docs.deno.com/runtime/reference/cli/jupyter/)
 * [Scribbler](https://scribbler.live/)
