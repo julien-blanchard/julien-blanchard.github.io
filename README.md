@@ -97,6 +97,7 @@ You're more than welcome to contribute to this project.
 * [Observable](https://observablehq.com/)
 * [Jupyter Kernel for Deno](https://docs.deno.com/runtime/reference/cli/jupyter/)
 * [Scribbler](https://scribbler.live/)
+* [Danfojs](https://github.com/javascriptdata/danfojs)
 
 #### Online playgrounds
 * [Carbide](https://alpha.trycarbide.com/)
