@@ -64,6 +64,8 @@ You're more than welcome to contribute to this project.
 * [Plotly](https://plotly.com/javascript/)
 * [VegaLite](https://vega.github.io/vega-lite/)
 * [Google Charts](https://developers.google.com/chart)
+* [SandDance](https://github.com/microsoft/SandDance)
+* [G6](https://github.com/antvis/G6)
 
 #### Tabular data
 * [Tabulator](https://tabulator.info/)
