@@ -45,6 +45,7 @@ You're more than welcome to contribute to this project.
 
 #### Manipulating data
 * [Arquero](https://github.com/uwdata/arquero)
+* [Tidy](https://pbeshai.github.io/tidy/)
 * [Danfo](https://danfo.jsdata.org/)
 * [Polars](https://github.com/pola-rs/nodejs-polars)
 
