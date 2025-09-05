@@ -159,6 +159,7 @@ Non JavaScript alternatives
 * [Node.js](https://nodejs.org/en)
 * [Bun.js](https://bun.sh/)
 * [Deno](https://deno.com/)
+* [NextJS Starter Boilerplate](https://github.com/ixartz/Next-js-Boilerplate)
 
 #### Web application frameworks
 * [React](https://react.dev/)
